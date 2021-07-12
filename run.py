@@ -1,3 +1,6 @@
+from autovideo import fit
+import torch
+
 # Fit
 _, fitted_pipeline = fit(train_dataset=train_dataset,
                         train_media_dir=train_media_dir,
@@ -5,5 +8,4 @@ _, fitted_pipeline = fit(train_dataset=train_dataset,
                         pipeline=pipeline)
 
 # Save the fitted pipeline
-import torch
-torch.save(fitted_pipeline, args.save_path)
+torch.save(fitted_pipeline, 'weights/')

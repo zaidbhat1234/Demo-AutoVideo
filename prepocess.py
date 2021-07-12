@@ -1,4 +1,4 @@
-from autovideo import fit, extract_frames
+from autovideo import extract_frames
 
 
 # Extract frames from the video
